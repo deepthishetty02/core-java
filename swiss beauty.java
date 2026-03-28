@@ -1,0 +1,2 @@
+class swiss beauty{
+}

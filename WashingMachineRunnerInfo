@@ -1,0 +1,13 @@
+class WashingMachineRunnerinfo {
+    public static void main(String[] args) {
+
+        WashingMachine.setBrand("Samsung");
+        WashingMachine.setModel("TopLoad");
+        WashingMachine.setPrice(25000);
+        WashingMachine.setCapacity(7);
+        WashingMachine.setType("Automatic");
+        WashingMachine.setColor("Grey");
+        WashingMachine.setWarranty(2);
+
+    }
+}
