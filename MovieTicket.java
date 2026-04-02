@@ -1,35 +1,28 @@
-class MovieTicket{
-public static void main(String[]args){
+class MovieTicket {
 
-String movieName;
-movieName="Leo";
-System.out.println("Movie Name: "+movieName);
-movieName="KGF";
-System.out.println("Updated Movie Name: "+movieName);
+    String movieName;
+    int seats;
+    double price;
 
-int seatNumber;
-seatNumber=15;
-System.out.println("Seat Number: "+seatNumber);
-seatNumber=22;
-System.out.println("Updated Seat Number: "+seatNumber);
+    MovieTicket(String movieName) {
+        this.movieName = movieName;
+    }
 
-double ticketPrice;
-ticketPrice=250.50;
-System.out.println("Ticket Price: "+ticketPrice);
-ticketPrice=300.75;
-System.out.println("Updated Ticket Price: "+ticketPrice);
+    MovieTicket(String movieName, int seats) {
+        this.movieName = movieName;
+        this.seats = seats;
+    }
 
-char screen;
-screen='A';
-System.out.println("Screen: "+screen);
-screen='B';
-System.out.println("Updated Screen: "+screen);
+    MovieTicket(String movieName, int seats, double price) {
+        this.movieName = movieName;
+        this.seats = seats;
+        this.price = price;
+    }
 
-boolean isBooked;
-isBooked=true;
-System.out.println("Booked: "+isBooked);
-isBooked=false;
-System.out.println("Updated Booked: "+isBooked);
-
-}
+    void display() {
+        System.out.println(movieName);
+        System.out.println(seats);
+        System.out.println(price);
+        System.out.println("-----------");
+    }
 }
