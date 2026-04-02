@@ -25,4 +25,4 @@ class RideBooking {
         System.out.println(fare);
         System.out.println("********");
     }
-}
+} 
