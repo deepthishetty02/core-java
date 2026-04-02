@@ -19,7 +19,7 @@ class ShoppingCart {
         this.totalPrice = totalPrice;
     }
 
-    void display() {
+    public void display() {
         System.out.println(itemName);
         System.out.println(quantity);
         System.out.println(totalPrice);
