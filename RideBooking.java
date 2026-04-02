@@ -19,7 +19,7 @@ class RideBooking {
         this.fare = fare;
     }
 
-    void display() {
+    public void display() {
         System.out.println(pickupLocation);
         System.out.println(dropLocation);
         System.out.println(fare);
