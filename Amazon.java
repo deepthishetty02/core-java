@@ -1,25 +1,30 @@
 class Amazon {
 
-    String productName;
-    String category;
-    int quantity;
-    long orderId;
-    boolean isDelivered;
-
-    public Amazon(String p1, String p2, int p3, long p4, boolean p5) {
-        productName = p1;
-        category = p2;
-        quantity = p3;
-        orderId = p4;
-        isDelivered = p5;
+    Amazon() {
+        this("Mobile");
+        System.out.println("0 argument constructor");
     }
 
-    public void display() {
-        System.out.println(productName);
-        System.out.println(category);
-        System.out.println(quantity);
-        System.out.println(orderId);
-        System.out.println(isDelivered);
-        System.out.println("------------");
+    Amazon(String product) {
+        this(product, 1);
+        System.out.println("1 argument constructor");
+    }
+
+    Amazon(String product, int quantity) {
+        this(product, quantity, 15000);
+        System.out.println("2 argument constructor");
+    }
+
+    Amazon(String product, int quantity, int price) {
+        this(product, quantity, price, "Online");
+        System.out.println("3 argument constructor");
+    }
+
+    Amazon(String product, int quantity, int price, String mode) {
+        System.out.println("Product : " + product);
+        System.out.println("Quantity : " + quantity);
+        System.out.println("Price : " + price);
+        System.out.println("Mode : " + mode);
+        System.out.println("-----------");
     }
 }

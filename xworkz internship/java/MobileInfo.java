@@ -1,0 +1,45 @@
+class MobileInfo {
+
+    static String brand;
+    static String model;
+    static int price;
+    static int ram;
+    static int storage;
+    static String color;
+    static double screenSize;
+
+    public static void setBrand(String brandName) {
+        brand = brandName;
+        System.out.println(brand);
+    }
+
+    public static void setModel(String modelName) {
+        model = modelName;
+        System.out.println(model);
+    }
+
+    public static void setPrice(int cost) {
+        price = cost;
+        System.out.println(price);
+    }
+
+    public static void setRam(int ramSize) {
+        ram = ramSize;
+        System.out.println(ram);
+    }
+
+    public static void setStorage(int storageSize) {
+        storage = storageSize;
+        System.out.println(storage);
+    }
+
+    public static void setColor(String mobileColor) {
+        color = mobileColor;
+        System.out.println(color);
+    }
+
+    public static void setScreenSize(double size) {
+        screenSize = size;
+        System.out.println(screenSize);
+    }
+}

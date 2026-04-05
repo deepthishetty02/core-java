@@ -1,25 +1,30 @@
 class Netflix {
 
-    String showName;
-    String genre;
-    int episodes;
-    long showId;
-    boolean isTrending;
-
-    public Netflix(String p1, String p2, int p3, long p4, boolean p5) {
-        showName = p1;
-        genre = p2;
-        episodes = p3;
-        showId = p4;
-        isTrending = p5;
+    Netflix() {
+        this("Basic");
+        System.out.println("0 argument constructor");
     }
 
-    public void display() {
-        System.out.println(showName);
-        System.out.println(genre);
-        System.out.println(episodes);
-        System.out.println(showId);
-        System.out.println(isTrending);
-        System.out.println("------------");
+    Netflix(String plan) {
+        this(plan, 1);
+        System.out.println("1 argument constructor");
+    }
+
+    Netflix(String plan, int screens) {
+        this(plan, screens, 499);
+        System.out.println("2 argument constructor");
+    }
+
+    Netflix(String plan, int screens, int price) {
+        this(plan, screens, price, "Monthly");
+        System.out.println("3 argument constructor");
+    }
+
+    Netflix(String plan, int screens, int price, String duration) {
+        System.out.println("Plan : " + plan);
+        System.out.println("Screens : " + screens);
+        System.out.println("Price : " + price);
+        System.out.println("Duration : " + duration);
+        System.out.println("-----------");
     }
 }
