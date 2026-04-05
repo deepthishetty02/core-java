@@ -19,10 +19,10 @@ class BankAccount {
         this.balance = balance;
     }
 
-    void display() {
+    public void display() {
         System.out.println(accountHolder);
         System.out.println(accountNumber);
         System.out.println(balance);
         System.out.println("-----");
     }
-}
+} 
